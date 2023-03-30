@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-layout{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+.box{
+    height: 100vh;
+    width: 100%;
+    padding: 10%;
+}
+
+.box img{
+    margin: 5%;
+    width: 70px;
+}
+
+.box h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: #fff;
+    margin: 20px 5%;
+}
+
+.box p{
+    margin: 30px 5%;
+    font-size: 1.1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 200%;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.box button{
+    margin: 10px 5%;
+    font-family: 'Lexend Deca', sans-serif;
+    width: 160px;
+    border: none;
+    
+    height: 50px;
+    border-radius: 60px;
+    font-size: 1.2rem;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0 0 ;
+}
+    .sedans button{
+        color:hsl(31, 77%, 52%);
+    }
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+    .suvs button{
+        color:hsl(184, 100%, 22%);
+    }
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 10px 10px ;
+}
+    .luxury button{
+        color:hsl(179, 100%, 13%);
+    }
+
+@media (min-width:1440px){
+
+    body{        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .flex-layout{
+        display: flex;
+        flex-direction: row;
+    }
+    .box{
+        margin-top: 10%;
+        width: 375px;
+        height: 600px;
+        padding: 5%;
+    }
+    
+    .box p{
+        margin: 30px 0;
+    }
+
+    .sedans{
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 0 0 10px;
+    }
+    .suvs{
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 10px 10px 0;
+    }
+}
